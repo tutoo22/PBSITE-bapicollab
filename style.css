@@ -1,0 +1,139 @@
+
+nav li a {
+	font-family:"Courier Prime";
+	font-size:20px;
+	color: black;
+	text-align: center; 
+	margin: 0px 100px 0px 100px;
+	}
+
+
+
+nav{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+#cloudbackground {
+	background-image: url("assets/cloudskyblue.jpg");
+	background-repeat: no-repeat;
+	
+	width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+	}
+	
+#headerlogo {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+#headerlogosizedown {
+	width: 200px;
+	height: auto;
+	margin 5px 10px
+	}
+	
+.navcloud1 {
+	background-image: url("assets/navcloud1.png");
+	background-repeat: no-repeat;
+	width: 100px;
+    height: 58px;
+    background-position: center;
+    background-size: cover;
+	}
+	
+
+.navcloud2 {
+	background-image: url("assets/navcloud2.png");
+	background-repeat: no-repeat;
+	width: 100px;
+    height: 58px;
+    background-position: center;
+    background-size: contain;
+	}
+	
+.navcloud3 {
+	background-image: url("assets/navcloud3.png");
+	background-repeat: no-repeat;
+	width: 100px;
+    height: 58px;
+    background-position: center;
+    background-size: cover;
+	}
+	
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  tranform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.footer {
+   text-align: center;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px; 
+   margin-bottom: 20px;
+}
+
+footer pre {
+	font-family:"Courier Prime";
+	font-size:15px;
+	color: white;
+		}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
